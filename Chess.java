@@ -2,7 +2,7 @@ import javax.swing.JFrame;
 
 import ControlPanel.Panel;
 
-public class Main{
+public class Chess{
     public static void main(String args []){
 
         JFrame frame = new JFrame();
