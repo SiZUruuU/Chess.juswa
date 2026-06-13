@@ -1,0 +1,15 @@
+        // int coorCol = piece.cols * 100;
+        // int coorRow = piece.rows * 100;
+        // int colAdj = coorCol + (pieceWidth/2);
+        // int rowAdj = coorRow + (pieceHeight/2);
+
+        // g2.drawImage(blackPawn, colAdj, rowAdj, pieceWidth, pieceHeight, panel);
+        // g2.drawImage(blackPawn, colAdj, rowAdj, pieceWidth, pieceHeight, panel);
+        // g2.drawImage(blackPawn, colAdj, rowAdj, pieceWidth, pieceHeight, panel);
+        // g2.drawImage(blackPawn, colAdj, rowAdj, pieceWidth, pieceHeight, panel);
+        // g2.drawImage(blackPawn, colAdj, rowAdj, pieceWidth, pieceHeight, panel);
+        // g2.drawImage(blackPawn, colAdj, rowAdj, pieceWidth, pieceHeight, panel);
+
+
+        // // g2.drawImage(blackPawn, (300 + pieceWidth), (100 + pieceHeight) ,pieceWidth,pieceHeight, panel);
+        // // g2.drawImage(whitePawn, 300,700,pieceWidth,pieceHeight, panel);
