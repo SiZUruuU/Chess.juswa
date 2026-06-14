@@ -12,9 +12,9 @@ public class PieceHandler {
 
     ChessPiece piece;
 
-    public int cols = 8, rows = 8;
+    public int col, row;
     public int[] chessPiece = new int[31];
-    public ChessPiece[][] pieceLoc =  new ChessPiece[cols][rows]; //HOLDS PIECE COORDINATES
+    public ChessPiece[][] pieceLoc =  new ChessPiece[8][8]; //HOLDS PIECE COORDINATES
 
 
     //INITIAL PIECE POSITION SETUP
@@ -64,5 +64,28 @@ public class PieceHandler {
         pieceLoc[4][7] = new King("King", "White");
         pieceLoc[4][0] = new King("King", "Black");
     }
-    
+
+    //Helper Method to get X position digits
+    public int mouseXPos(int num){
+
+        int digit = 0;
+
+        while (num != 0){
+            num /= 10;
+            digit++;
+        }
+        return digit;
+    }
+
+    //Helper Method to get Y position digits
+    public int mouseYPos(int num){
+
+        int digit = 0;
+
+        while (num != 0){
+            num /= 10;
+            digit++;
+        }
+        return digit;
+    }
 }

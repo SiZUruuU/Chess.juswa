@@ -20,6 +20,7 @@ public class UI {
     public int boardX, boardY;
     public int xBox = 0, yBox = 0, wBox = 100, hBox = 100;
     private int pieceHeight = 50, pieceWidth = 50;
+    private int rows = 8, cols = 8;
 
     public UI(Panel panel, PieceHandler piece){
         this.panel = panel;
@@ -40,7 +41,7 @@ public class UI {
 
     public void drawChessBoard(Graphics2D g2){
 
-        for(int i = 1; i <= piece.rows + 1; i++){
+        for(int i = 1; i <= rows + 1; i++){
 
             xBox = 0;
             g2.setColor(Color.BLACK);
@@ -65,7 +66,7 @@ public class UI {
 
         String name, color;
 
-        for(int c = 0; c < piece.cols; c++){
+        for(int c = 0; c < cols; c++){
             if(piece.pieceLoc[c][0] != null){
                     name = piece.pieceLoc[c][0].name;
                     color = piece.pieceLoc[c][0].color;
@@ -94,7 +95,7 @@ public class UI {
                                 break;
                     }
                 }
-            for(int r = 0; r < piece.rows; r++){
+            for(int r = 0; r < rows; r++){
                 if(piece.pieceLoc[c][r] != null){
                     name = piece.pieceLoc[c][r].name;
                     color = piece.pieceLoc[c][r].color;

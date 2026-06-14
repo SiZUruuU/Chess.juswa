@@ -13,7 +13,7 @@ public class Panel extends JPanel {
 
     Graphics2D g2;
     PieceHandler piece = new PieceHandler();
-    MouseHandler mouse = new MouseHandler();
+    MouseHandler mouse = new MouseHandler(piece);
     UI ui = new UI(this, piece);
     
     public ChessPiece blackPiece[] = new ChessPiece[16];

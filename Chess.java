@@ -8,6 +8,7 @@ public class Chess{
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
+        frame.setUndecorated(false);
         frame.setTitle("chess");
 
         Panel panel = new Panel();
