@@ -34,6 +34,8 @@ public class MouseHandler implements MouseInputListener {
             name = piece.pieceLoc[col][row].name;
             color = piece.pieceLoc[col][row].color;
         }
+
+        System.out.print("Piece: " + name + "\nColor: " + color);
     }
 
     @Override

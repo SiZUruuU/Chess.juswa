@@ -7,7 +7,7 @@ public class Chess{
 
         JFrame frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setResizable(false);
+        frame.setResizable(true);
         frame.setUndecorated(false);
         frame.setTitle("chess");
 
