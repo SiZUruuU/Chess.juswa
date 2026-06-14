@@ -13,6 +13,7 @@ public class Panel extends JPanel {
 
     Graphics2D g2;
     PieceHandler piece = new PieceHandler();
+    MouseHandler mouse = new MouseHandler();
     UI ui = new UI(this, piece);
     
     public ChessPiece blackPiece[] = new ChessPiece[16];
@@ -27,6 +28,7 @@ public class Panel extends JPanel {
         this.setPreferredSize(new Dimension(screenHeight, screenWidth));
         this.setLayout(null);
         this.setDoubleBuffered(true);
+        this.addMouseListener(mouse);
         piece.setUp();
     }
 

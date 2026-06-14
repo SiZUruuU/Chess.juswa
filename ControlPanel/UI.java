@@ -18,7 +18,6 @@ public class UI {
     public BufferedImage blackPiece, whitePiece;
 
     public int boardX, boardY;
-    private int pieceX, pieceY;
     public int xBox = 0, yBox = 0, wBox = 100, hBox = 100;
     private int pieceHeight = 50, pieceWidth = 50;
 
