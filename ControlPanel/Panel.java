@@ -13,8 +13,8 @@ public class Panel extends JPanel {
 
     Graphics2D g2;
     PieceHandler piece = new PieceHandler();
-    MouseHandler mouse = new MouseHandler(piece);
     UI ui = new UI(this, piece);
+    MouseHandler mouse = new MouseHandler(piece, this, ui);
     
     public ChessPiece blackPiece[] = new ChessPiece[16];
     public ChessPiece whitPiece[] = new ChessPiece[16];
@@ -37,10 +37,8 @@ public class Panel extends JPanel {
         super.paintComponent(g);
 
         Graphics2D g2 = (Graphics2D)g;
-        g2.setColor(Color.white);
-
+        g2.setColor(Color.BLACK);
         ui.draw(g2);
 
     }
-
 }

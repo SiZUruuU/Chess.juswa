@@ -18,7 +18,8 @@ public class UI {
     public BufferedImage blackPiece, whitePiece;
 
     public int boardX, boardY;
-    public int xBox = 0, yBox = 0, wBox = 100, hBox = 100;
+    public boolean repaint = false;
+    public int xBox = 0, wBox = 100, hBox = 100;
     private int pieceHeight = 50, pieceWidth = 50;
     private int rows = 8, cols = 8;
 
@@ -40,11 +41,11 @@ public class UI {
     }
 
     public void drawChessBoard(Graphics2D g2){
-
+        int yBox = 0;
+        g2.setColor(Color.BLACK);
         for(int i = 1; i <= rows + 1; i++){
 
             xBox = 0;
-            g2.setColor(Color.BLACK);
             
             if(i > 1){yBox = yBox + 100;}
             if(i % 2 == 0){
@@ -139,4 +140,13 @@ public class UI {
         }
         return image;
     }
+
+    // public void repaintPiece(Graphics2D g2){
+    //     if(repaint){
+    //         drawChessBoard(g2);
+    //         drawChessPiece(g2);
+    //         panel.repaint();
+    //         repaint = false;
+    //     }
+    // }
 }

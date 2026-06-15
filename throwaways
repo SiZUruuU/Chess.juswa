@@ -13,3 +13,10 @@
 
         // // g2.drawImage(blackPawn, (300 + pieceWidth), (100 + pieceHeight) ,pieceWidth,pieceHeight, panel);
         // // g2.drawImage(whitePawn, 300,700,pieceWidth,pieceHeight, panel);
+
+                                // int colMove = Integer.parseInt(String.valueOf(colChr));
+                        // int rowMove = Integer.parseInt(String.valueOf(rowChr));
+
+                                                // ui.repaint = true;
+                        // ui.drawChessBoard(g2);
+                        // panel.repaint();
