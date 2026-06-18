@@ -2,7 +2,7 @@ package Pieces;
 
 public class King extends ChessPiece{
 
-    public King(String name, String color, boolean moveable) {
-        super(name, color, moveable);
+    public King(String name, String color) {
+        super(name, color);
     }  
 }

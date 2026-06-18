@@ -7,14 +7,17 @@ import java.awt.Graphics2D;
 import java.util.ArrayList;
 import javax.swing.JPanel;
 
+import PieceHandler.PieceHandler;
+import PieceHandler.PieceMover;
 import Pieces.ChessPiece;
 
 public class Panel extends JPanel {
 
     Graphics2D g2;
-    PieceHandler piece = new PieceHandler();
+    public PieceHandler piece = new PieceHandler();
     UI ui = new UI(this, piece);
-    MouseHandler mouse = new MouseHandler(piece, this, ui);
+    MouseHandler mouse = new MouseHandler(piece, this);
+    PieceMover pieceMover = new PieceMover(this, piece);
     
     public ChessPiece blackPiece[] = new ChessPiece[16];
     public ChessPiece whitPiece[] = new ChessPiece[16];

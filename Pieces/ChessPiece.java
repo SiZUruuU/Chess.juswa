@@ -8,10 +8,9 @@ public class ChessPiece {
     public String name, color;
     public boolean ableMove;
 
-    public ChessPiece(String name, String color, boolean ableMove){
+    public ChessPiece(String name, String color){
         this.name = name;
         this.color = color;
-        this.ableMove = ableMove;
     }
 }
 

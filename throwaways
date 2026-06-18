@@ -20,3 +20,28 @@
                                                 // ui.repaint = true;
                         // ui.drawChessBoard(g2);
                         // panel.repaint();
+
+//                             public void whiteHandler(int selectCol, int selectRow, String name, String color){
+//         System.out.println("selectCol: " + selectCol + "\nselectRow: " + selectRow);
+//                 if(color == "White"){
+//                 this.name = name;
+                    
+//                     if(name == "Pawn" || name == "Knight" || name == "Bishop" || name == "Queen" || name == "King" || name == "Rook"){
+//                         System.out.println("Piece: " + name + "\nColor: " + color);
+//                         System.out.println("X: " + selectCol + "\nY: " + selectRow + "\n");
+
+//                     }
+//                 }
+//     }
+
+//     public void blackHandler(int selectCol, int selectRow, String name, String color){
+//         System.out.println("selectCol: " + selectCol + "\nselectRow: " + selectRow);
+//                 if(panel.piece.pieceLoc[selectCol][selectRow].color == "White"){
+//                 name = panel.piece.pieceLoc[selectCol][selectRow].name;
+                    
+//                     if(name == "Pawn" || name == "Knight" || name == "Bishop" || name == "Queen" || name == "King" || name == "Rook"){
+//                         System.out.println("Piece: " + name + "\nColor: " + color);
+//                         System.out.println("X: " + selectCol + "\nY: " + selectRow + "\n");
+//                     }
+//                 }
+//     }

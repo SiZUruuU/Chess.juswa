@@ -5,6 +5,8 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.awt.Graphics2D;
 import javax.imageio.ImageIO;
+
+import PieceHandler.PieceHandler;
 import Pieces.ChessPiece;
 
 public class UI {
@@ -44,7 +46,6 @@ public class UI {
         int yBox = 0;
         g2.setColor(Color.BLACK);
         for(int i = 1; i <= rows + 1; i++){
-
             xBox = 0;
             
             if(i > 1){yBox = yBox + 100;}
